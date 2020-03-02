@@ -82,6 +82,11 @@ $('.competition').on('click', function(event) {
 			$('#ketimage').html("")
 			$('#srcimage').attr('src', 'uploads/lomba3.jpg');
 		break;
+		case '4':
+			$('#judulimage').html("Administration System and Computer Network")
+			$('#ketimage').html("")
+			$('#srcimage').attr('src', 'uploads/sertifikat1.jpg');
+		break;
 	}
 	$('#modal-id').modal('toggle')
 });
@@ -106,6 +111,7 @@ $('.organization').on('click', function(event) {
 			$('#ketimage').html("")
 			$('#srcimage').attr('src', 'uploads/organisasi3.jpg');
 		break;
+
 	}
 	$('#modal-id').modal('toggle')
 });

@@ -1,6 +1,7 @@
 $('.hoverbutton').on('click', function(event) {
 	event.preventDefault();
 	var val = $(this).attr('value')
+	$('.modal-dialog').addClass('modal-lg')
 	switch(val){
 		case '1': 
 			$('#judulimage').html("ACEH BIODIVERSITY")
@@ -40,3 +41,71 @@ $('.hoverbutton').on('click', function(event) {
 	}
 	$('#modal-id').modal('toggle')
 });		
+
+
+$('.degree').on('click', function(event) {
+	event.preventDefault();
+	var val = $(this).attr('value');
+	$('.modal-dialog').removeClass('modal-lg')
+	switch(val){
+		case '1':
+			$('#judulimage').html("Politeknik Negeri Lhokseumawe ")
+			$('#ketimage').html("")
+			$('#srcimage').attr('src', 'uploads/ijazah1.jpg');
+		break;
+		case '2':
+			$('#judulimage').html("SMA Negeri 1 Bireuen")
+			$('#ketimage').html("")
+			$('#srcimage').attr('src', 'uploads/ijazah2.jpg');
+		break;
+	}
+	$('#modal-id').modal('toggle')
+});
+
+$('.competition').on('click', function(event) {
+	event.preventDefault();
+	var val = $(this).attr('value');
+	$('.modal-dialog').removeClass('modal-lg')
+	switch(val){
+		case '1':
+			$('#judulimage').html("Kometisi Mahasiswa Informatika Politeknik Nasional")
+			$('#ketimage').html("")
+			$('#srcimage').attr('src', 'uploads/lomba1.jpg');
+		break;
+		case '2':
+			$('#judulimage').html("National Polytechnic English Olympic")
+			$('#ketimage').html("")
+			$('#srcimage').attr('src', 'uploads/lomba2.jpg');
+		break;
+		case '3':
+			$('#judulimage').html("Mahasiswa Berprestasi")
+			$('#ketimage').html("")
+			$('#srcimage').attr('src', 'uploads/lomba3.jpg');
+		break;
+	}
+	$('#modal-id').modal('toggle')
+});
+
+$('.organization').on('click', function(event) {
+	event.preventDefault();
+	var val = $(this).attr('value');
+	$('.modal-dialog').removeClass('modal-lg')
+	switch(val){
+		case '1':
+			$('#judulimage').html("Himpunan Mahasiswa TIK")
+			$('#ketimage').html("")
+			$('#srcimage').attr('src', 'uploads/organisasi1.jpg');
+		break;
+		case '2':
+			$('#judulimage').html("UKM Improving English Club Of Polytechnic")
+			$('#ketimage').html("")
+			$('#srcimage').attr('src', 'uploads/organisasi2.jpg');
+		break;
+		case '3':
+			$('#judulimage').html("Mahasiswa Berprestasi")
+			$('#ketimage').html("")
+			$('#srcimage').attr('src', 'uploads/organisasi3.jpg');
+		break;
+	}
+	$('#modal-id').modal('toggle')
+});

@@ -1,3 +1,43 @@
+
+var n = localStorage.getItem('on_load_counter');
+
+if (n === null) {
+  n = 0;
+}
+n++;
+
+localStorage.setItem("on_load_counter", n);
+
+nums = n.toString().split('').map(Number);
+document.getElementById('CounterVisitor').innerHTML = '';
+for (var i of nums) {
+  document.getElementById('CounterVisitor').innerHTML += '<span class="counter-item">' + i + '</span>';
+}
+// HttpCookie aCookie = new HttpCookie("hasVisited");
+// aCookie.Value = true;
+// aCookie.Expires = DateTime.Now.AddDays(100);
+// Response.Cookies.Add(aCookie);
+// if(Request.Cookies["hasVisited"] == null)
+// {
+	
+//     // increment counter and add cookie for future reference...
+// }
+// function random(min,max)
+// {
+//     return Math.floor(Math.random()*(max-min+1)+min);
+// }
+
+// var initial = random(500, 2000);
+// var count = initial;
+
+// setInterval(function() {
+//   var variation = random(-5,5);
+
+//   count += variation
+//   console.log('You currently have ' + count + ' visitors')
+
+// }, 2000)
+
 $('.hoverbutton').on('click', function(event) {
 	event.preventDefault();
 	var val = $(this).attr('value')
